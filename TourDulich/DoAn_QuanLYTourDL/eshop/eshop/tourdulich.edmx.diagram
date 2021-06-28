@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="07579b6d2f984f649aa1b22be02e1d18" Name="Diagram1">
+        <EntityTypeShape EntityType="TOUR_DULICHModel.ADMIN" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.CHITIET_CHUYENBAY" Width="1.5" PointX="5.25" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.CHITIET_HOADON" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.CHITIET_KHACHSAN" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.DATTOUR" Width="1.5" PointX="3" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.DUA_DOAN_SAN_BAY" Width="1.5" PointX="6" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.HOA_DON" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.JRPASS" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.KHACH_HANG" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.KHACH_SAN" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.K" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.NHAN_VIEN" Width="1.5" PointX="7.75" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.SAN_BAY" Width="1.5" PointX="3.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.sysdiagram" Width="1.5" PointX="8.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.TAI_KHOAN" Width="1.5" PointX="9.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.THUE_XE" Width="1.5" PointX="8.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.TOUR" Width="1.5" PointX="9.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TOUR_DULICHModel.VE_MAY_BAY" Width="1.5" PointX="3" PointY="16.375" IsExpanded="true" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_CTCB_MB" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_DT_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_DDSB_SB" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_SB_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_HD_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_KS_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="TOUR_DULICHModel.FK_VEMB_KH" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

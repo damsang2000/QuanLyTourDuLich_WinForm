@@ -1,0 +1,121 @@
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\bin\Debug\eshop.exe.config
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\bin\Debug\eshop.exe
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\bin\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.exe
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\bin\Debug\Guna.UI2.dll
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+C:\Users\ASUS\Desktop\on c#\eshop\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe.config
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.exe
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+C:\Users\ASUS\Desktop\CONG_NGHE_NET\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe.config
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.exe
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.pdb
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.pdb
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.VeMayBay.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ComBoTietKiem.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.DuaDoanSanBay.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.JRPass.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachSan.resources
+C:\Users\DELL\Downloads\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ThueXe.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe.config
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.exe
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.pdb
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.pdb
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ComBoTietKiem.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.DuaDoanSanBay.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.JRPass.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachSan.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ThueXe.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.VeMayBay.resources
+F:\Báo cáo công nghệ net\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe.config
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.exe
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ComBoTietKiem.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.DuaDoanSanBay.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachSan.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.ThueXe.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.VeMayBay.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.exe
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.FrTrangChuAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.vemaybayadmin.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachHang.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachHangAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.HoaDon.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.HoaDonAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.XacNhanKH.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.KhachSanAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.DuaDonSanBayAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.frTour.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.TourAD.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\eshop.frReport.resources
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\RdlCompile.cache
+C:\Users\ASUS\Desktop\do_an_quan_li_tour_dl\eshop\eshop\obj\Debug\RdlCompile.compiled
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\bin\Debug\eshop.exe.config
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.exe
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\bin\Debug\eshop.exe
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\bin\Debug\eshop.pdb
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.csprojResolveAssemblyReference.cache
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.ComBoTietKiem.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.DuaDoanSanBay.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.DuaDonSanBayAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.frReport.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.Frsignin.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.frTour.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.FrTrangChu.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.FrLoGin.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.FrTrangChuAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.HoaDon.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.HoaDonAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.KhachHang.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.KhachHangAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.KhachSan.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.KhachSanAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.Properties.Resources.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.ThueXe.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.TourAD.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.VeMayBay.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.vemaybayadmin.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.XacNhanKH.resources
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\eshop.csproj.GenerateResource.Cache
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\RdlCompile.cache
+C:\Users\ASUS\Desktop\DamTanSang_NguyenThiThaoDuy\DoAn_QuanLYTourDL\eshop\eshop\obj\Debug\RdlCompile.compiled

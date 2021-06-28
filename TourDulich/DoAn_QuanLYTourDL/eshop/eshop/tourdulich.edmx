@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="TOUR_DULICHModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="TOUR_DULICHModelStoreContainer">
+          <EntitySet Name="ADMIN" EntityType="TOUR_DULICHModel.Store.ADMIN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CHITIET_CHUYENBAY" EntityType="TOUR_DULICHModel.Store.CHITIET_CHUYENBAY" store:Type="Tables" store:Schema="dbo" store:Name="CHITIET_CHUYENBAY">
+            <DefiningQuery>SELECT 
+      [CHITIET_CHUYENBAY].[MaVe] AS [MaVe], 
+      [CHITIET_CHUYENBAY].[DiemKhoiHanh] AS [DiemKhoiHanh], 
+      [CHITIET_CHUYENBAY].[DiemDen] AS [DiemDen], 
+      [CHITIET_CHUYENBAY].[SoHanhKhach] AS [SoHanhKhach], 
+      [CHITIET_CHUYENBAY].[NgayDi] AS [NgayDi], 
+      [CHITIET_CHUYENBAY].[Ngayve] AS [Ngayve], 
+      [CHITIET_CHUYENBAY].[HangGhe] AS [HangGhe], 
+      [CHITIET_CHUYENBAY].[tongtien] AS [tongtien]
+      FROM [dbo].[CHITIET_CHUYENBAY] AS [CHITIET_CHUYENBAY]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CHITIET_HOADON" EntityType="TOUR_DULICHModel.Store.CHITIET_HOADON" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="CHITIET_KHACHSAN" EntityType="TOUR_DULICHModel.Store.CHITIET_KHACHSAN" store:Type="Tables" store:Schema="dbo" store:Name="CHITIET_KHACHSAN">
+            <DefiningQuery>SELECT 
+      [CHITIET_KHACHSAN].[MaKS] AS [MaKS], 
+      [CHITIET_KHACHSAN].[TenKS] AS [TenKS], 
+      [CHITIET_KHACHSAN].[NgayNhanPhong] AS [NgayNhanPhong], 
+      [CHITIET_KHACHSAN].[NgayTraPhong] AS [NgayTraPhong], 
+      [CHITIET_KHACHSAN].[SoHanhKhach] AS [SoHanhKhach], 
+      [CHITIET_KHACHSAN].[SoPhong] AS [SoPhong], 
+      [CHITIET_KHACHSAN].[tongtien] AS [tongtien]
+      FROM [dbo].[CHITIET_KHACHSAN] AS [CHITIET_KHACHSAN]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="DATTOUR" EntityType="TOUR_DULICHModel.Store.DATTOUR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DUA_DOAN_SAN_BAY" EntityType="TOUR_DULICHModel.Store.DUA_DOAN_SAN_BAY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="HOA_DON" EntityType="TOUR_DULICHModel.Store.HOA_DON" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JRPASS" EntityType="TOUR_DULICHModel.Store.JRPASS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="KHACH_HANG" EntityType="TOUR_DULICHModel.Store.KHACH_HANG" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="KHACH_SAN" EntityType="TOUR_DULICHModel.Store.KHACH_SAN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="KS" EntityType="TOUR_DULICHModel.Store.KS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="NHAN_VIEN" EntityType="TOUR_DULICHModel.Store.NHAN_VIEN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SAN_BAY" EntityType="TOUR_DULICHModel.Store.SAN_BAY" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="sysdiagrams" EntityType="TOUR_DULICHModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TAI_KHOAN" EntityType="TOUR_DULICHModel.Store.TAI_KHOAN" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="THUE_XE" EntityType="TOUR_DULICHModel.Store.THUE_XE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TOUR" EntityType="TOUR_DULICHModel.Store.TOUR" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="VE_MAY_BAY" EntityType="TOUR_DULICHModel.Store.VE_MAY_BAY" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_CTCB_MB" Association="TOUR_DULICHModel.Store.FK_CTCB_MB">
+            <End Role="VE_MAY_BAY" EntitySet="VE_MAY_BAY" />
+            <End Role="CHITIET_CHUYENBAY" EntitySet="CHITIET_CHUYENBAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DDSB_SB" Association="TOUR_DULICHModel.Store.FK_DDSB_SB">
+            <End Role="SAN_BAY" EntitySet="SAN_BAY" />
+            <End Role="DUA_DOAN_SAN_BAY" EntitySet="DUA_DOAN_SAN_BAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DT_KH" Association="TOUR_DULICHModel.Store.FK_DT_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="DATTOUR" EntitySet="DATTOUR" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HD_KH" Association="TOUR_DULICHModel.Store.FK_HD_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="HOA_DON" EntitySet="HOA_DON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KS_KH" Association="TOUR_DULICHModel.Store.FK_KS_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="KHACH_SAN" EntitySet="KHACH_SAN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SB_KH" Association="TOUR_DULICHModel.Store.FK_SB_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="DUA_DOAN_SAN_BAY" EntitySet="DUA_DOAN_SAN_BAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEMB_KH" Association="TOUR_DULICHModel.Store.FK_VEMB_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="VE_MAY_BAY" EntitySet="VE_MAY_BAY" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="password" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'TOUR_DULICH.dbo.CHITIET_CHUYENBAY' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="CHITIET_CHUYENBAY">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="DiemKhoiHanh" Type="nvarchar" MaxLength="100" />
+          <Property Name="DiemDen" Type="nvarchar" MaxLength="100" />
+          <Property Name="SoHanhKhach" Type="int" />
+          <Property Name="NgayDi" Type="date" />
+          <Property Name="Ngayve" Type="date" />
+          <Property Name="HangGhe" Type="nvarchar" MaxLength="20" />
+          <Property Name="tongtien" Type="int" />
+        </EntityType>
+        <EntityType Name="CHITIET_HOADON">
+          <Key>
+            <PropertyRef Name="MaHD" />
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaHD" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="MaVe" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="SoLuong" Type="int" />
+          <Property Name="DonGia" Type="int" />
+          <Property Name="GiamGia" Type="int" />
+          <Property Name="ThanhTien" Type="int" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'TOUR_DULICH.dbo.CHITIET_KHACHSAN' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="CHITIET_KHACHSAN">
+          <Key>
+            <PropertyRef Name="MaKS" />
+            <PropertyRef Name="TenKS" />
+          </Key>
+          <Property Name="MaKS" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenKS" Type="nvarchar" Nullable="false" MaxLength="30" />
+          <Property Name="NgayNhanPhong" Type="date" />
+          <Property Name="NgayTraPhong" Type="date" />
+          <Property Name="SoHanhKhach" Type="int" />
+          <Property Name="SoPhong" Type="int" />
+          <Property Name="tongtien" Type="int" />
+        </EntityType>
+        <EntityType Name="DATTOUR">
+          <Key>
+            <PropertyRef Name="MAVET" />
+          </Key>
+          <Property Name="MAVET" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="TENT" Type="nvarchar" MaxLength="30" />
+          <Property Name="TIENT" Type="int" />
+          <Property Name="MaKH" Type="char" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DUA_DOAN_SAN_BAY">
+          <Key>
+            <PropertyRef Name="MaSB" />
+            <PropertyRef Name="MaKH" />
+          </Key>
+          <Property Name="MaSB" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TuDiaDiem" Type="nvarchar" MaxLength="100" />
+          <Property Name="DenDiaDiem" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayDon" Type="date" />
+          <Property Name="GioDoan" Type="char" MaxLength="50" />
+          <Property Name="MaKH" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="tongtien" Type="int" />
+        </EntityType>
+        <EntityType Name="HOA_DON">
+          <Key>
+            <PropertyRef Name="MaHD" />
+          </Key>
+          <Property Name="MaHD" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="MaKH" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="SoLuongVe" Type="int" />
+          <Property Name="Loaive" Type="nvarchar" MaxLength="30" />
+          <Property Name="NgayLap" Type="date" />
+          <Property Name="TongTien" Type="int" />
+        </EntityType>
+        <EntityType Name="JRPASS">
+          <Key>
+            <PropertyRef Name="MaJR" />
+          </Key>
+          <Property Name="MaJR" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenJR" Type="nvarchar" MaxLength="20" />
+          <Property Name="MoTa" Type="nvarchar" MaxLength="100" />
+          <Property Name="GiaTien" Type="int" />
+        </EntityType>
+        <EntityType Name="KHACH_HANG">
+          <Key>
+            <PropertyRef Name="MaKH" />
+          </Key>
+          <Property Name="MaKH" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenKH" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="3" />
+          <Property Name="SDT" Type="int" />
+        </EntityType>
+        <EntityType Name="KHACH_SAN">
+          <Key>
+            <PropertyRef Name="MaKS" />
+          </Key>
+          <Property Name="MaKS" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenKS" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayNhanPhong" Type="date" />
+          <Property Name="NgayTraPhong" Type="date" />
+          <Property Name="SoPhong" Type="int" />
+          <Property Name="SoNgayO" Type="int" />
+          <Property Name="KhachTrenMotPhong" Type="int" />
+          <Property Name="MaKH" Type="char" MaxLength="20" />
+          <Property Name="tongtien" Type="int" />
+        </EntityType>
+        <EntityType Name="KS">
+          <Key>
+            <PropertyRef Name="TENKS" />
+          </Key>
+          <Property Name="TENKS" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="NHAN_VIEN">
+          <Key>
+            <PropertyRef Name="MaNV" />
+          </Key>
+          <Property Name="MaNV" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenNV" Type="nvarchar" MaxLength="50" />
+          <Property Name="GioiTinh" Type="nvarchar" MaxLength="5" />
+          <Property Name="Luong" Type="int" />
+          <Property Name="ChucVu" Type="nvarchar" MaxLength="50" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="50" />
+          <Property Name="SDT" Type="int" />
+          <Property Name="NgaySinh" Type="date" />
+        </EntityType>
+        <EntityType Name="SAN_BAY">
+          <Key>
+            <PropertyRef Name="MaSB" />
+          </Key>
+          <Property Name="MaSB" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenSB" Type="nvarchar" MaxLength="100" />
+          <Property Name="DiaChi" Type="nvarchar" MaxLength="100" />
+          <Property Name="SDT" Type="int" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TAI_KHOAN">
+          <Key>
+            <PropertyRef Name="TenDangNhap" />
+          </Key>
+          <Property Name="TenDangNhap" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="MatKhau" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="THUE_XE">
+          <Key>
+            <PropertyRef Name="MaXe" />
+          </Key>
+          <Property Name="MaXe" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="LoaiXe" Type="nvarchar" MaxLength="20" />
+          <Property Name="DiaDiemThueXe" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayBatDau" Type="date" />
+          <Property Name="GioBatDau" Type="date" />
+          <Property Name="NgayKetThuc" Type="date" />
+          <Property Name="GioKetThuc" Type="date" />
+        </EntityType>
+        <EntityType Name="TOUR">
+          <Key>
+            <PropertyRef Name="MAT" />
+            <PropertyRef Name="TENT" />
+          </Key>
+          <Property Name="MAT" Type="nchar" Nullable="false" MaxLength="10" />
+          <Property Name="TENT" Type="nvarchar" Nullable="false" MaxLength="30" />
+        </EntityType>
+        <EntityType Name="VE_MAY_BAY">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="MaKH" Type="char" Nullable="false" MaxLength="20" />
+          <Property Name="TenKH" Type="nvarchar" MaxLength="30" />
+          <Property Name="DiemKhoiHanh" Type="nvarchar" MaxLength="100" />
+          <Property Name="DiemDen" Type="nvarchar" MaxLength="100" />
+          <Property Name="NgayDi" Type="date" />
+          <Property Name="NgayVe" Type="date" />
+          <Property Name="SoHanhKhach" Type="int" />
+          <Property Name="HangGhe" Type="nvarchar" MaxLength="40" />
+          <Property Name="Tongtien" Type="int" />
+        </EntityType>
+        <Association Name="FK_CTCB_MB">
+          <End Role="VE_MAY_BAY" Type="TOUR_DULICHModel.Store.VE_MAY_BAY" Multiplicity="1" />
+          <End Role="CHITIET_CHUYENBAY" Type="TOUR_DULICHModel.Store.CHITIET_CHUYENBAY" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VE_MAY_BAY">
+              <PropertyRef Name="MaVe" />
+            </Principal>
+            <Dependent Role="CHITIET_CHUYENBAY">
+              <PropertyRef Name="MaVe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DDSB_SB">
+          <End Role="SAN_BAY" Type="TOUR_DULICHModel.Store.SAN_BAY" Multiplicity="1" />
+          <End Role="DUA_DOAN_SAN_BAY" Type="TOUR_DULICHModel.Store.DUA_DOAN_SAN_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SAN_BAY">
+              <PropertyRef Name="MaSB" />
+            </Principal>
+            <Dependent Role="DUA_DOAN_SAN_BAY">
+              <PropertyRef Name="MaSB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DT_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.Store.KHACH_HANG" Multiplicity="0..1" />
+          <End Role="DATTOUR" Type="TOUR_DULICHModel.Store.DATTOUR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="DATTOUR">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HD_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.Store.KHACH_HANG" Multiplicity="1" />
+          <End Role="HOA_DON" Type="TOUR_DULICHModel.Store.HOA_DON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="HOA_DON">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KS_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.Store.KHACH_HANG" Multiplicity="0..1" />
+          <End Role="KHACH_SAN" Type="TOUR_DULICHModel.Store.KHACH_SAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="KHACH_SAN">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SB_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.Store.KHACH_HANG" Multiplicity="1" />
+          <End Role="DUA_DOAN_SAN_BAY" Type="TOUR_DULICHModel.Store.DUA_DOAN_SAN_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="DUA_DOAN_SAN_BAY">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEMB_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.Store.KHACH_HANG" Multiplicity="1" />
+          <End Role="VE_MAY_BAY" Type="TOUR_DULICHModel.Store.VE_MAY_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="VE_MAY_BAY">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="TOUR_DULICHModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="TOUR_DULICHEntities2" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="ADMINs" EntityType="TOUR_DULICHModel.ADMIN" />
+          <EntitySet Name="CHITIET_CHUYENBAY" EntityType="TOUR_DULICHModel.CHITIET_CHUYENBAY" />
+          <EntitySet Name="CHITIET_HOADON" EntityType="TOUR_DULICHModel.CHITIET_HOADON" />
+          <EntitySet Name="CHITIET_KHACHSAN" EntityType="TOUR_DULICHModel.CHITIET_KHACHSAN" />
+          <EntitySet Name="DATTOURs" EntityType="TOUR_DULICHModel.DATTOUR" />
+          <EntitySet Name="DUA_DOAN_SAN_BAY" EntityType="TOUR_DULICHModel.DUA_DOAN_SAN_BAY" />
+          <EntitySet Name="HOA_DON" EntityType="TOUR_DULICHModel.HOA_DON" />
+          <EntitySet Name="JRPASSes" EntityType="TOUR_DULICHModel.JRPASS" />
+          <EntitySet Name="KHACH_HANG" EntityType="TOUR_DULICHModel.KHACH_HANG" />
+          <EntitySet Name="KHACH_SAN" EntityType="TOUR_DULICHModel.KHACH_SAN" />
+          <EntitySet Name="KS" EntityType="TOUR_DULICHModel.K" />
+          <EntitySet Name="NHAN_VIEN" EntityType="TOUR_DULICHModel.NHAN_VIEN" />
+          <EntitySet Name="SAN_BAY" EntityType="TOUR_DULICHModel.SAN_BAY" />
+          <EntitySet Name="sysdiagrams" EntityType="TOUR_DULICHModel.sysdiagram" />
+          <EntitySet Name="TAI_KHOAN" EntityType="TOUR_DULICHModel.TAI_KHOAN" />
+          <EntitySet Name="THUE_XE" EntityType="TOUR_DULICHModel.THUE_XE" />
+          <EntitySet Name="TOURs" EntityType="TOUR_DULICHModel.TOUR" />
+          <EntitySet Name="VE_MAY_BAY" EntityType="TOUR_DULICHModel.VE_MAY_BAY" />
+          <AssociationSet Name="FK_CTCB_MB" Association="TOUR_DULICHModel.FK_CTCB_MB">
+            <End Role="VE_MAY_BAY" EntitySet="VE_MAY_BAY" />
+            <End Role="CHITIET_CHUYENBAY" EntitySet="CHITIET_CHUYENBAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DT_KH" Association="TOUR_DULICHModel.FK_DT_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="DATTOUR" EntitySet="DATTOURs" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DDSB_SB" Association="TOUR_DULICHModel.FK_DDSB_SB">
+            <End Role="SAN_BAY" EntitySet="SAN_BAY" />
+            <End Role="DUA_DOAN_SAN_BAY" EntitySet="DUA_DOAN_SAN_BAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_SB_KH" Association="TOUR_DULICHModel.FK_SB_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="DUA_DOAN_SAN_BAY" EntitySet="DUA_DOAN_SAN_BAY" />
+          </AssociationSet>
+          <AssociationSet Name="FK_HD_KH" Association="TOUR_DULICHModel.FK_HD_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="HOA_DON" EntitySet="HOA_DON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KS_KH" Association="TOUR_DULICHModel.FK_KS_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="KHACH_SAN" EntitySet="KHACH_SAN" />
+          </AssociationSet>
+          <AssociationSet Name="FK_VEMB_KH" Association="TOUR_DULICHModel.FK_VEMB_KH">
+            <End Role="KHACH_HANG" EntitySet="KHACH_HANG" />
+            <End Role="VE_MAY_BAY" EntitySet="VE_MAY_BAY" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ADMIN">
+          <Key>
+            <PropertyRef Name="username" />
+          </Key>
+          <Property Name="username" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="password" Type="String" MaxLength="20" Unicode="true" FixedLength="true" />
+        </EntityType>
+        <EntityType Name="CHITIET_CHUYENBAY">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="DiemKhoiHanh" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DiemDen" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="SoHanhKhach" Type="Int32" />
+          <Property Name="NgayDi" Type="DateTime" Precision="0" />
+          <Property Name="Ngayve" Type="DateTime" Precision="0" />
+          <Property Name="HangGhe" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="tongtien" Type="Int32" />
+          <NavigationProperty Name="VE_MAY_BAY" Relationship="TOUR_DULICHModel.FK_CTCB_MB" FromRole="CHITIET_CHUYENBAY" ToRole="VE_MAY_BAY" />
+        </EntityType>
+        <EntityType Name="CHITIET_HOADON">
+          <Key>
+            <PropertyRef Name="MaHD" />
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaHD" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="MaVe" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="SoLuong" Type="Int32" />
+          <Property Name="DonGia" Type="Int32" />
+          <Property Name="GiamGia" Type="Int32" />
+          <Property Name="ThanhTien" Type="Int32" />
+        </EntityType>
+        <EntityType Name="CHITIET_KHACHSAN">
+          <Key>
+            <PropertyRef Name="MaKS" />
+            <PropertyRef Name="TenKS" />
+          </Key>
+          <Property Name="MaKS" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenKS" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="NgayNhanPhong" Type="DateTime" Precision="0" />
+          <Property Name="NgayTraPhong" Type="DateTime" Precision="0" />
+          <Property Name="SoHanhKhach" Type="Int32" />
+          <Property Name="SoPhong" Type="Int32" />
+          <Property Name="tongtien" Type="Int32" />
+        </EntityType>
+        <EntityType Name="DATTOUR">
+          <Key>
+            <PropertyRef Name="MAVET" />
+          </Key>
+          <Property Name="MAVET" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="TENT" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="TIENT" Type="Int32" />
+          <Property Name="MaKH" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <NavigationProperty Name="KHACH_HANG" Relationship="TOUR_DULICHModel.FK_DT_KH" FromRole="DATTOUR" ToRole="KHACH_HANG" />
+        </EntityType>
+        <EntityType Name="DUA_DOAN_SAN_BAY">
+          <Key>
+            <PropertyRef Name="MaSB" />
+            <PropertyRef Name="MaKH" />
+          </Key>
+          <Property Name="MaSB" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TuDiaDiem" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DenDiaDiem" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NgayDon" Type="DateTime" Precision="0" />
+          <Property Name="GioDoan" Type="String" MaxLength="50" Unicode="false" FixedLength="true" />
+          <Property Name="MaKH" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="tongtien" Type="Int32" />
+          <NavigationProperty Name="SAN_BAY" Relationship="TOUR_DULICHModel.FK_DDSB_SB" FromRole="DUA_DOAN_SAN_BAY" ToRole="SAN_BAY" />
+          <NavigationProperty Name="KHACH_HANG" Relationship="TOUR_DULICHModel.FK_SB_KH" FromRole="DUA_DOAN_SAN_BAY" ToRole="KHACH_HANG" />
+        </EntityType>
+        <EntityType Name="HOA_DON">
+          <Key>
+            <PropertyRef Name="MaHD" />
+          </Key>
+          <Property Name="MaHD" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="MaKH" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="SoLuongVe" Type="Int32" />
+          <Property Name="Loaive" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="NgayLap" Type="DateTime" Precision="0" />
+          <Property Name="TongTien" Type="Int32" />
+          <NavigationProperty Name="KHACH_HANG" Relationship="TOUR_DULICHModel.FK_HD_KH" FromRole="HOA_DON" ToRole="KHACH_HANG" />
+        </EntityType>
+        <EntityType Name="JRPASS">
+          <Key>
+            <PropertyRef Name="MaJR" />
+          </Key>
+          <Property Name="MaJR" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenJR" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="MoTa" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="GiaTien" Type="Int32" />
+        </EntityType>
+        <EntityType Name="KHACH_HANG">
+          <Key>
+            <PropertyRef Name="MaKH" />
+          </Key>
+          <Property Name="MaKH" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenKH" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GioiTinh" Type="String" MaxLength="3" Unicode="true" FixedLength="false" />
+          <Property Name="SDT" Type="Int32" />
+          <NavigationProperty Name="DATTOURs" Relationship="TOUR_DULICHModel.FK_DT_KH" FromRole="KHACH_HANG" ToRole="DATTOUR" />
+          <NavigationProperty Name="DUA_DOAN_SAN_BAY" Relationship="TOUR_DULICHModel.FK_SB_KH" FromRole="KHACH_HANG" ToRole="DUA_DOAN_SAN_BAY" />
+          <NavigationProperty Name="HOA_DON" Relationship="TOUR_DULICHModel.FK_HD_KH" FromRole="KHACH_HANG" ToRole="HOA_DON" />
+          <NavigationProperty Name="KHACH_SAN" Relationship="TOUR_DULICHModel.FK_KS_KH" FromRole="KHACH_HANG" ToRole="KHACH_SAN" />
+          <NavigationProperty Name="VE_MAY_BAY" Relationship="TOUR_DULICHModel.FK_VEMB_KH" FromRole="KHACH_HANG" ToRole="VE_MAY_BAY" />
+        </EntityType>
+        <EntityType Name="KHACH_SAN">
+          <Key>
+            <PropertyRef Name="MaKS" />
+          </Key>
+          <Property Name="MaKS" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenKS" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NgayNhanPhong" Type="DateTime" Precision="0" />
+          <Property Name="NgayTraPhong" Type="DateTime" Precision="0" />
+          <Property Name="SoPhong" Type="Int32" />
+          <Property Name="SoNgayO" Type="Int32" />
+          <Property Name="KhachTrenMotPhong" Type="Int32" />
+          <Property Name="MaKH" Type="String" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="tongtien" Type="Int32" />
+          <NavigationProperty Name="KHACH_HANG" Relationship="TOUR_DULICHModel.FK_KS_KH" FromRole="KHACH_SAN" ToRole="KHACH_HANG" />
+        </EntityType>
+        <EntityType Name="K">
+          <Key>
+            <PropertyRef Name="TENKS" />
+          </Key>
+          <Property Name="TENKS" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="NHAN_VIEN">
+          <Key>
+            <PropertyRef Name="MaNV" />
+          </Key>
+          <Property Name="MaNV" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenNV" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="GioiTinh" Type="String" MaxLength="5" Unicode="true" FixedLength="false" />
+          <Property Name="Luong" Type="Int32" />
+          <Property Name="ChucVu" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="SDT" Type="Int32" />
+          <Property Name="NgaySinh" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="SAN_BAY">
+          <Key>
+            <PropertyRef Name="MaSB" />
+          </Key>
+          <Property Name="MaSB" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenSB" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="SDT" Type="Int32" />
+          <NavigationProperty Name="DUA_DOAN_SAN_BAY" Relationship="TOUR_DULICHModel.FK_DDSB_SB" FromRole="SAN_BAY" ToRole="DUA_DOAN_SAN_BAY" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TAI_KHOAN">
+          <Key>
+            <PropertyRef Name="TenDangNhap" />
+          </Key>
+          <Property Name="TenDangNhap" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="MatKhau" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Email" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="THUE_XE">
+          <Key>
+            <PropertyRef Name="MaXe" />
+          </Key>
+          <Property Name="MaXe" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="LoaiXe" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="DiaDiemThueXe" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NgayBatDau" Type="DateTime" Precision="0" />
+          <Property Name="GioBatDau" Type="DateTime" Precision="0" />
+          <Property Name="NgayKetThuc" Type="DateTime" Precision="0" />
+          <Property Name="GioKetThuc" Type="DateTime" Precision="0" />
+        </EntityType>
+        <EntityType Name="TOUR">
+          <Key>
+            <PropertyRef Name="MAT" />
+            <PropertyRef Name="TENT" />
+          </Key>
+          <Property Name="MAT" Type="String" Nullable="false" MaxLength="10" Unicode="true" FixedLength="true" />
+          <Property Name="TENT" Type="String" Nullable="false" MaxLength="30" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="VE_MAY_BAY">
+          <Key>
+            <PropertyRef Name="MaVe" />
+          </Key>
+          <Property Name="MaVe" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="MaKH" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="true" />
+          <Property Name="TenKH" Type="String" MaxLength="30" Unicode="true" FixedLength="false" />
+          <Property Name="DiemKhoiHanh" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="DiemDen" Type="String" MaxLength="100" Unicode="true" FixedLength="false" />
+          <Property Name="NgayDi" Type="DateTime" Precision="0" />
+          <Property Name="NgayVe" Type="DateTime" Precision="0" />
+          <Property Name="SoHanhKhach" Type="Int32" />
+          <Property Name="HangGhe" Type="String" MaxLength="40" Unicode="true" FixedLength="false" />
+          <Property Name="Tongtien" Type="Int32" />
+          <NavigationProperty Name="CHITIET_CHUYENBAY" Relationship="TOUR_DULICHModel.FK_CTCB_MB" FromRole="VE_MAY_BAY" ToRole="CHITIET_CHUYENBAY" />
+          <NavigationProperty Name="KHACH_HANG" Relationship="TOUR_DULICHModel.FK_VEMB_KH" FromRole="VE_MAY_BAY" ToRole="KHACH_HANG" />
+        </EntityType>
+        <Association Name="FK_CTCB_MB">
+          <End Role="VE_MAY_BAY" Type="TOUR_DULICHModel.VE_MAY_BAY" Multiplicity="1" />
+          <End Role="CHITIET_CHUYENBAY" Type="TOUR_DULICHModel.CHITIET_CHUYENBAY" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="VE_MAY_BAY">
+              <PropertyRef Name="MaVe" />
+            </Principal>
+            <Dependent Role="CHITIET_CHUYENBAY">
+              <PropertyRef Name="MaVe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DT_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.KHACH_HANG" Multiplicity="0..1" />
+          <End Role="DATTOUR" Type="TOUR_DULICHModel.DATTOUR" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="DATTOUR">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DDSB_SB">
+          <End Role="SAN_BAY" Type="TOUR_DULICHModel.SAN_BAY" Multiplicity="1" />
+          <End Role="DUA_DOAN_SAN_BAY" Type="TOUR_DULICHModel.DUA_DOAN_SAN_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SAN_BAY">
+              <PropertyRef Name="MaSB" />
+            </Principal>
+            <Dependent Role="DUA_DOAN_SAN_BAY">
+              <PropertyRef Name="MaSB" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_SB_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.KHACH_HANG" Multiplicity="1" />
+          <End Role="DUA_DOAN_SAN_BAY" Type="TOUR_DULICHModel.DUA_DOAN_SAN_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="DUA_DOAN_SAN_BAY">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_HD_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.KHACH_HANG" Multiplicity="1" />
+          <End Role="HOA_DON" Type="TOUR_DULICHModel.HOA_DON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="HOA_DON">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KS_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.KHACH_HANG" Multiplicity="0..1" />
+          <End Role="KHACH_SAN" Type="TOUR_DULICHModel.KHACH_SAN" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="KHACH_SAN">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_VEMB_KH">
+          <End Role="KHACH_HANG" Type="TOUR_DULICHModel.KHACH_HANG" Multiplicity="1" />
+          <End Role="VE_MAY_BAY" Type="TOUR_DULICHModel.VE_MAY_BAY" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="KHACH_HANG">
+              <PropertyRef Name="MaKH" />
+            </Principal>
+            <Dependent Role="VE_MAY_BAY">
+              <PropertyRef Name="MaKH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="TOUR_DULICHModelStoreContainer" CdmEntityContainer="TOUR_DULICHEntities2">
+          <EntitySetMapping Name="ADMINs">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.ADMIN">
+              <MappingFragment StoreEntitySet="ADMIN">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CHITIET_CHUYENBAY">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.CHITIET_CHUYENBAY">
+              <MappingFragment StoreEntitySet="CHITIET_CHUYENBAY">
+                <ScalarProperty Name="MaVe" ColumnName="MaVe" />
+                <ScalarProperty Name="DiemKhoiHanh" ColumnName="DiemKhoiHanh" />
+                <ScalarProperty Name="DiemDen" ColumnName="DiemDen" />
+                <ScalarProperty Name="SoHanhKhach" ColumnName="SoHanhKhach" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
+                <ScalarProperty Name="Ngayve" ColumnName="Ngayve" />
+                <ScalarProperty Name="HangGhe" ColumnName="HangGhe" />
+                <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CHITIET_HOADON">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.CHITIET_HOADON">
+              <MappingFragment StoreEntitySet="CHITIET_HOADON">
+                <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+                <ScalarProperty Name="MaVe" ColumnName="MaVe" />
+                <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
+                <ScalarProperty Name="DonGia" ColumnName="DonGia" />
+                <ScalarProperty Name="GiamGia" ColumnName="GiamGia" />
+                <ScalarProperty Name="ThanhTien" ColumnName="ThanhTien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CHITIET_KHACHSAN">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.CHITIET_KHACHSAN">
+              <MappingFragment StoreEntitySet="CHITIET_KHACHSAN">
+                <ScalarProperty Name="MaKS" ColumnName="MaKS" />
+                <ScalarProperty Name="TenKS" ColumnName="TenKS" />
+                <ScalarProperty Name="NgayNhanPhong" ColumnName="NgayNhanPhong" />
+                <ScalarProperty Name="NgayTraPhong" ColumnName="NgayTraPhong" />
+                <ScalarProperty Name="SoHanhKhach" ColumnName="SoHanhKhach" />
+                <ScalarProperty Name="SoPhong" ColumnName="SoPhong" />
+                <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DATTOURs">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.DATTOUR">
+              <MappingFragment StoreEntitySet="DATTOUR">
+                <ScalarProperty Name="MAVET" ColumnName="MAVET" />
+                <ScalarProperty Name="TENT" ColumnName="TENT" />
+                <ScalarProperty Name="TIENT" ColumnName="TIENT" />
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DUA_DOAN_SAN_BAY">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.DUA_DOAN_SAN_BAY">
+              <MappingFragment StoreEntitySet="DUA_DOAN_SAN_BAY">
+                <ScalarProperty Name="MaSB" ColumnName="MaSB" />
+                <ScalarProperty Name="TuDiaDiem" ColumnName="TuDiaDiem" />
+                <ScalarProperty Name="DenDiaDiem" ColumnName="DenDiaDiem" />
+                <ScalarProperty Name="NgayDon" ColumnName="NgayDon" />
+                <ScalarProperty Name="GioDoan" ColumnName="GioDoan" />
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+                <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="HOA_DON">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.HOA_DON">
+              <MappingFragment StoreEntitySet="HOA_DON">
+                <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+                <ScalarProperty Name="SoLuongVe" ColumnName="SoLuongVe" />
+                <ScalarProperty Name="Loaive" ColumnName="Loaive" />
+                <ScalarProperty Name="NgayLap" ColumnName="NgayLap" />
+                <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JRPASSes">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.JRPASS">
+              <MappingFragment StoreEntitySet="JRPASS">
+                <ScalarProperty Name="MaJR" ColumnName="MaJR" />
+                <ScalarProperty Name="TenJR" ColumnName="TenJR" />
+                <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+                <ScalarProperty Name="GiaTien" ColumnName="GiaTien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KHACH_HANG">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.KHACH_HANG">
+              <MappingFragment StoreEntitySet="KHACH_HANG">
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+                <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KHACH_SAN">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.KHACH_SAN">
+              <MappingFragment StoreEntitySet="KHACH_SAN">
+                <ScalarProperty Name="MaKS" ColumnName="MaKS" />
+                <ScalarProperty Name="TenKS" ColumnName="TenKS" />
+                <ScalarProperty Name="NgayNhanPhong" ColumnName="NgayNhanPhong" />
+                <ScalarProperty Name="NgayTraPhong" ColumnName="NgayTraPhong" />
+                <ScalarProperty Name="SoPhong" ColumnName="SoPhong" />
+                <ScalarProperty Name="SoNgayO" ColumnName="SoNgayO" />
+                <ScalarProperty Name="KhachTrenMotPhong" ColumnName="KhachTrenMotPhong" />
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+                <ScalarProperty Name="tongtien" ColumnName="tongtien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="KS">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.K">
+              <MappingFragment StoreEntitySet="KS">
+                <ScalarProperty Name="TENKS" ColumnName="TENKS" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="NHAN_VIEN">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.NHAN_VIEN">
+              <MappingFragment StoreEntitySet="NHAN_VIEN">
+                <ScalarProperty Name="MaNV" ColumnName="MaNV" />
+                <ScalarProperty Name="TenNV" ColumnName="TenNV" />
+                <ScalarProperty Name="GioiTinh" ColumnName="GioiTinh" />
+                <ScalarProperty Name="Luong" ColumnName="Luong" />
+                <ScalarProperty Name="ChucVu" ColumnName="ChucVu" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SAN_BAY">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.SAN_BAY">
+              <MappingFragment StoreEntitySet="SAN_BAY">
+                <ScalarProperty Name="MaSB" ColumnName="MaSB" />
+                <ScalarProperty Name="TenSB" ColumnName="TenSB" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TAI_KHOAN">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.TAI_KHOAN">
+              <MappingFragment StoreEntitySet="TAI_KHOAN">
+                <ScalarProperty Name="TenDangNhap" ColumnName="TenDangNhap" />
+                <ScalarProperty Name="MatKhau" ColumnName="MatKhau" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="THUE_XE">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.THUE_XE">
+              <MappingFragment StoreEntitySet="THUE_XE">
+                <ScalarProperty Name="MaXe" ColumnName="MaXe" />
+                <ScalarProperty Name="LoaiXe" ColumnName="LoaiXe" />
+                <ScalarProperty Name="DiaDiemThueXe" ColumnName="DiaDiemThueXe" />
+                <ScalarProperty Name="NgayBatDau" ColumnName="NgayBatDau" />
+                <ScalarProperty Name="GioBatDau" ColumnName="GioBatDau" />
+                <ScalarProperty Name="NgayKetThuc" ColumnName="NgayKetThuc" />
+                <ScalarProperty Name="GioKetThuc" ColumnName="GioKetThuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TOURs">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.TOUR">
+              <MappingFragment StoreEntitySet="TOUR">
+                <ScalarProperty Name="MAT" ColumnName="MAT" />
+                <ScalarProperty Name="TENT" ColumnName="TENT" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="VE_MAY_BAY">
+            <EntityTypeMapping TypeName="TOUR_DULICHModel.VE_MAY_BAY">
+              <MappingFragment StoreEntitySet="VE_MAY_BAY">
+                <ScalarProperty Name="MaVe" ColumnName="MaVe" />
+                <ScalarProperty Name="MaKH" ColumnName="MaKH" />
+                <ScalarProperty Name="TenKH" ColumnName="TenKH" />
+                <ScalarProperty Name="DiemKhoiHanh" ColumnName="DiemKhoiHanh" />
+                <ScalarProperty Name="DiemDen" ColumnName="DiemDen" />
+                <ScalarProperty Name="NgayDi" ColumnName="NgayDi" />
+                <ScalarProperty Name="NgayVe" ColumnName="NgayVe" />
+                <ScalarProperty Name="SoHanhKhach" ColumnName="SoHanhKhach" />
+                <ScalarProperty Name="HangGhe" ColumnName="HangGhe" />
+                <ScalarProperty Name="Tongtien" ColumnName="Tongtien" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

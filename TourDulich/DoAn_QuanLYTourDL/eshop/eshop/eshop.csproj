@@ -1,0 +1,437 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3A57A243-7858-4245-9C31-184E44F0F3B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eshop</RootNamespace>
+    <AssemblyName>eshop</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="69024-bunifu_ui_v1.52">
+      <HintPath>..\..\..\..\..\Downloads\69024-bunifu_ui_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\..\..\Downloads\Guna.UI2 Activation v2.0.0.9\Build\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIET_CHUYENBAY.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIET_HOADON.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CHITIET_KHACHSAN.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ComBoTietKiem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComBoTietKiem.Designer.cs">
+      <DependentUpon>ComBoTietKiem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DATTOUR.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DuaDoanSanBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuaDoanSanBay.Designer.cs">
+      <DependentUpon>DuaDoanSanBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DuaDonSanBayAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DuaDonSanBayAD.Designer.cs">
+      <DependentUpon>DuaDonSanBayAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DUA_DOAN_SAN_BAY.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="frReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frReport.Designer.cs">
+      <DependentUpon>frReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frsignin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frsignin.Designer.cs">
+      <DependentUpon>Frsignin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frTour.Designer.cs">
+      <DependentUpon>frTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTrangChu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTrangChu.Designer.cs">
+      <DependentUpon>FrTrangChu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrLoGin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrLoGin.Designer.cs">
+      <DependentUpon>FrLoGin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrTrangChuAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrTrangChuAD.Designer.cs">
+      <DependentUpon>FrTrangChuAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDon.Designer.cs">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoaDonAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoaDonAD.Designer.cs">
+      <DependentUpon>HoaDonAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HOA_DON.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="JRPASS.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="K.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachHangAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachHangAD.Designer.cs">
+      <DependentUpon>KhachHangAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachSan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachSan.Designer.cs">
+      <DependentUpon>KhachSan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KhachSanAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KhachSanAD.Designer.cs">
+      <DependentUpon>KhachSanAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KHACH_HANG.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KHACH_SAN.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NHAN_VIEN.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportHD.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportHD.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SAN_BAY.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TAI_KHOAN.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThueXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThueXe.Designer.cs">
+      <DependentUpon>ThueXe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="THUE_XE.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TOUR.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TourAD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TourAD.Designer.cs">
+      <DependentUpon>TourAD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tourdulich.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tourdulich.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tourdulich.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tourdulich.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tourdulich.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs" />
+    <Compile Include="VeMayBay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VeMayBay.Designer.cs">
+      <DependentUpon>VeMayBay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vemaybayadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vemaybayadmin.Designer.cs">
+      <DependentUpon>vemaybayadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VE_MAY_BAY.cs">
+      <DependentUpon>tourdulich.tt</DependentUpon>
+    </Compile>
+    <Compile Include="XacNhanKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XacNhanKH.Designer.cs">
+      <DependentUpon>XacNhanKH.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComBoTietKiem.resx">
+      <DependentUpon>ComBoTietKiem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuaDoanSanBay.resx">
+      <DependentUpon>DuaDoanSanBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DuaDonSanBayAD.resx">
+      <DependentUpon>DuaDonSanBayAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frReport.resx">
+      <DependentUpon>frReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frsignin.resx">
+      <DependentUpon>Frsignin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frTour.resx">
+      <DependentUpon>frTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTrangChu.resx">
+      <DependentUpon>FrTrangChu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrLoGin.resx">
+      <DependentUpon>FrLoGin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrTrangChuAD.resx">
+      <DependentUpon>FrTrangChuAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDon.resx">
+      <DependentUpon>HoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoaDonAD.resx">
+      <DependentUpon>HoaDonAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachHangAD.resx">
+      <DependentUpon>KhachHangAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachSan.resx">
+      <DependentUpon>KhachSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KhachSanAD.resx">
+      <DependentUpon>KhachSanAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="ThueXe.resx">
+      <DependentUpon>ThueXe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TourAD.resx">
+      <DependentUpon>TourAD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VeMayBay.resx">
+      <DependentUpon>VeMayBay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vemaybayadmin.resx">
+      <DependentUpon>vemaybayadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XacNhanKH.resx">
+      <DependentUpon>XacNhanKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EntityDeploy Include="tourdulich.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>tourdulich.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="ReportHD.xsc">
+      <DependentUpon>ReportHD.xsd</DependentUpon>
+    </None>
+    <None Include="ReportHD.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportHD.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ReportHD.xss">
+      <DependentUpon>ReportHD.xsd</DependentUpon>
+    </None>
+    <None Include="tourdulich.edmx.diagram">
+      <DependentUpon>tourdulich.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-icon-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Capture.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location-pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\placeholder %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\room-key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\moon-eclipsing-the-sun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ruongbacthang.jpg" />
+    <None Include="Resources\tam-coc-ninh-binh.jpg" />
+    <None Include="Resources\vinh-ha-long-1.jpg" />
+    <None Include="Resources\co-do-hue-mien-dat-cua-nhung-di-san.jpg" />
+    <None Include="Resources\lang-khai-dinh-hue.jpg" />
+    <None Include="Resources\Ve-dep-hoai-co-cua-pho-co-hoi-an-lam-say-dam-long-nguoi-1.jpg" />
+    <None Include="Resources\lanmark.jpg" />
+    <None Include="Resources\f89648c090604df482f94fd733d4d05c.jpg" />
+    <None Include="Resources\ceec04446f59459faa6c7feae82cb323.jpg" />
+    <None Include="Resources\customer-review.png" />
+    <None Include="Resources\log-out.png" />
+    <None Include="Resources\account.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tourdulich.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tourdulich.edmx</DependentUpon>
+      <LastGenOutput>tourdulich.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="tourdulich.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>tourdulich.edmx</DependentUpon>
+      <LastGenOutput>tourdulich.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
